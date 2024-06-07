@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/lib/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>main</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-lg">
+          <a href="">
+            <img
+              src="./assets/image/b-logo.png"
+              alt=""
+              class="img-fluid n-logo"
+            />
+          </a>
+          <button
+            type="button"
+            class="btn btn-outline-dark text-uppercase m-l fw-bold"
+            data-bs-toggle="modal"
+            data-bs-target="#showl"
+          >
+            log in
+          </button>
+          <div
+            class="modal fade"
+            id="showl"
+            tabindex="-1"
+            aria-labelledby="userl"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 text-uppercase">log in!</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="s-int text-center">
+                    <input type="text" name="email" placeholder="Email" />
+                  </div>
+                  <div class="s-int text-center">
+                    <input type="text" name="password" placeholder="Password" />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary text-uppercase"
+                    >
+                      log in
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger text-uppercase"
+                      data-bs-dismiss="modal"
+                    >
+                      exit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-dark text-uppercase fw-bold m-l"
+            data-bs-toggle="modal"
+            data-bs-target="#users"
+          >
+            sign up
+          </button>
+          <div
+            class="modal fade"
+            id="users"
+            tabindex="-1"
+            aria-labelledby="users"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 text-uppercase">sign up</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="Email"
+                      class="sname"
+                    />
+                  </div>
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="usern"
+                      placeholder="User Name"
+                      class="suser"
+                    />
+                  </div>
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="ads"
+                      placeholder="address"
+                      class="sads"
+                    />
+                  </div>
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="password"
+                      placeholder="Password"
+                      class="spass"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary text-uppercase btn-sign"
+                      data-bs-dismiss="modal"
+                    >
+                      sign up
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger text-uppercase btn-c"
+                      data-bs-dismiss="modal"
+                    >
+                      cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#show"
+            aria-expanded="false"
+            aria-controls="#show"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="show">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="" class="nav-link activve text-uppercase fw-bold"
+                  >home</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#menu" class="nav-link text-uppercase fw-bold">menu</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link text-uppercase fw-bold">contact</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#user"
+            >
+              <img
+                src="./assets/icon/user-circle-regular-24.png"
+                alt=""
+                class="img-fluid c-user"
+              />
+            </button>
+          </div>
+          <div
+            class="modal fade"
+            id="user"
+            tabindex="-1"
+            aria-labelledby="user"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4">user</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="ui">Name : <span class="uname"></span></p>
+                  <p class="ui">User Name : <span class="uuser"></span></p>
+                  <p class="ui">Address : <span class="uads"></span></p>
+                  <p class="ui">Password : <span class="upass"></span></p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-out"
+                    aria-label="Close"
+                  >
+                    Log Out
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <div class="content">
+        <div class="container-lg">
+          <h1 class="text-center fw-bold text-uppercase t-h">
+            welcome to moon light
+          </h1>
+          <h2 class="text-uppercase fw-bolder text-center">big sale 85%</h2>
+          <div class="row text-center">
+            <div class="col-lg-4 col-sm-4 col-4 cont-img">
+              <div class="c-img">
+                <img
+                  src="./assets/image/p6.png"
+                  alt=""
+                  class="img-fluid h-img"
+                  style="width: 15rem"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-4 cont-img">
+              <div class="c-img">
+                <img
+                  src="./assets/image/p5.png"
+                  alt=""
+                  class="img-fluid h-img"
+                  style="width: 20rem"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-4 cont-img">
+              <div class="c-img">
+                <img
+                  src="./assets/image/p7.png"
+                  alt=""
+                  class="img-fluid h-img"
+                  style="width: 15rem"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="menu" id="menu">
+        <h1 class="text-center text-uppercase fw-bolder">menu</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p1.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-1</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p2.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-2</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p3.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-3</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p4.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-4</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p5.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-5</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p6.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-6</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p7.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-7</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p8.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-8</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <div class="m-photo">
+                <img
+                  src="./assets/image/p9.png"
+                  alt=""
+                  class="img-fluid m-img"
+                />
+                <p class="text-center text-uppercase fw-bold h3">c-9</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-uppercase b-or"
+                  data-bs-toggle="modal"
+                  data-bs-target="#order"
+                >
+                  order now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="order"
+            tabindex="-1"
+            aria-hidden="true"
+            aria-labelledby="order"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 text-dark text-uppercase fw-bold">
+                    hello
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="nname"
+                      placeholder="Nick Name"
+                      class="nname"
+                    />
+                  </div>
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="address"
+                      placeholder="Address"
+                      class="address"
+                    />
+                  </div>
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="phone No."
+                      class="phone"
+                    />
+                  </div>
+                  <div class="s-int text-center">
+                    <input
+                      type="text"
+                      name="product"
+                      placeholder="Product"
+                      class="product"
+                    />
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark btn-order"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#corder"
+                  >
+                    Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade corder"
+            id="corder"
+            aria-labelledby="corder"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title text-uppercase text-dark fs-4 fw-bold">
+                    confirm order
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="cnorder">Name : <span class="cname"></span></p>
+                  <p class="cnorder">Address : <span class="cads"></span></p>
+                  <p class="cnorder">
+                    Phone No. : <span class="cphone"></span>
+                  </p>
+                  <p class="cnorder">Product : <span class="cpro"></span></p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-cnorder"
+                    data-bs-dismiss="modal"
+                  >
+                    Order
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#order"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</html>

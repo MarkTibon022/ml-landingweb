@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* navbar */
+.n-logo {
+  width: 5rem;
+  margin-right: 5rem;
+}
+
+.c-user {
+  width: 1.5rem;
+}
+
+.s-int input {
+  border: none;
+  margin: 1rem;
+  width: 60vh;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.m-l {
+  margin: 0 1rem;
+}
+
+/* home/content */
+.content {
+  background-color: #ecb176;
+}
+
+.t-h {
+  padding: 2.2rem;
+}
+
+.c-img {
+  background-color: #d8ae7e;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+/* menu */
+.menu {
+  background-color: rgb(240, 189, 130);
+}
+
+.menu h1 {
+  color: #d8ae7e;
+  background-color: white;
+}
+
+.m-photo {
+  margin: 1rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.m-photo:hover {
+  background-color: #e99e54;
+  transition: 0.5s;
+}
+
+.m-img {
+  height: 20rem;
+}
+
+.b-or {
+  margin-bottom: 1rem;
+}
+
+.ui {
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+/* media */
+@media (max-width: 425px) {
+  .n-logo {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+
+  .m-l {
+    margin: 0;
+  }
+
+  .content .t-h {
+    padding: 1rem;
+  }
+
+  .c-img {
+    margin: 0.5rem 0;
+  }
+
+  .s-int input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 45vh;
+  }
+
+  .h-img {
+    height: 8rem;
+  }
+  /* menu */
+
+  .m-img {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .n-logo {
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
+
+  .m-l {
+    height: 2r.5em;
+  }
+
+  .content .t-h {
+    padding: 0.5rem;
+  }
+
+  .m-img {
+    height: 7rem;
+  }
+
+  .b-or {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .m-photo {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .n-logo {
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
+
+  .m-l {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  .s-int input {
+    padding: 0.4rem;
+    margin: 0.5rem;
+    width: 45vh;
+  }
+
+  .content .t-h {
+    padding: 0.5rem;
+  }
+
+  .m-img {
+    height: 7rem;
+  }
+
+  .b-or {
+    margin-bottom: 0.2rem;
+    font-size: 0.6rem;
+  }
+}
